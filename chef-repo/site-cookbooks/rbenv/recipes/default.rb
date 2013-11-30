@@ -43,3 +43,11 @@ git "/usr/local/rbenv/plugins/ruby-build" do
   group "rbenv"
 end
 
+git "/usr/local/rbenv/plugins/rbenv-binstubs" do
+  repository "git://github.com/ianheggie/rbenv-binstubs.git"
+  reference "master"
+  action :checkout
+  user "#{node.user}"
+  group "rbenv"
+end
+
