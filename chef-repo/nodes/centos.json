@@ -1,8 +1,10 @@
 {
   "run_list":[
+    "git",
     "recipe[yum::epel]",
     "recipe[yum::remi]",
     "yumsetup",
-    "git"
+    "rbenv::default",
+    "rbenv::install"
   ]
 }

@@ -1,4 +1,5 @@
 site :opscode
+#source "http://api.berkshel.com"
 
 cookbook 'yum'
 
