@@ -19,7 +19,7 @@ execute "ruby install" do
 end
 
 execute "ruby change" do
-  command "source /etc/profile.d/rbenv.sh; rbenv global #{node.build}; rbenv rehash"
+  command "source /etc/profile.d/rbenv.sh; rbenv global #{node.build}; rbenv rehash; update_rubygems"
   action :run
 end
 
