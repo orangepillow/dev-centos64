@@ -5,6 +5,7 @@
     "recipe[yum::remi]",
     "yumsetup",
     "rbenv::default",
-    "rbenv::install"
+    "rbenv::install",
+    "nginx"
   ]
 }
